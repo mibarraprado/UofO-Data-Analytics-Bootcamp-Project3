@@ -1,0 +1,4 @@
+#Yelp Fusion API Key
+Client_ID= "TfNX6YDGX5itOpvpbnXurw"
+
+yelp_api_key =  "tce8h_FqJw30vLO5EKIcuJ_hvnoHQ9H8D6408qWkwav4QkNo0lRLHLUQbG4hZtVafy4RStnjDP2R4HGv11-8S16bKaNCXDJ_1rdCzJZorapYft93jGU2r26S8pQrZHYx"
