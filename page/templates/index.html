@@ -28,13 +28,6 @@
 
         const voteCast = (str) => {
             fetch(`http://127.0.0.1:5000/vote${JSON.stringify(str)}`)
-            //, {
-            //     method: 'POST', // Specify the request method
-            //     headers: {
-            //         'Content-Type': 'application/json' // Set the content type of the request body
-            //     },
-            //     body: JSON.stringify(str) // Attach the JSON data as the request body
-            // })
         }
         const showVotingTotals = () => {
             fetch("http://localhost:5000/voteTot")
@@ -53,18 +46,20 @@
             padding: 0;
             background-color: #f5f5f5;
             color: #333;
+            overflow-x: hidden;
         }
         
         #topBar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #4CAF50;
+            background-color: #131fc7;
+            font-size: small;
             padding: 10px 20px;
             color: #fff;
         }
         
-        #topBar h {
+        #topBar h2 {
             font-size: 24px;
             margin: 0;
         }
@@ -73,8 +68,11 @@
             display: flex;
         }
         
-        #navBar span {
-            padding: 0 10px;
+        #navBar span a {
+            padding: 0 5px;
+            color: white;
+            text-decoration: none;
+            font-size: x-small;
             cursor: pointer;
         }
         
@@ -84,10 +82,10 @@
         
         #description {
             max-width: 700px;
-            margin: 30px auto;
             font-size: 18px;
             text-align: center;
             line-height: 1.6;
+            background-color: #a5abff
         }
         
         #votingArea {
@@ -95,6 +93,7 @@
             flex-direction: column;
             align-items: center;
             margin-bottom: 30px;
+            
         }
         
         #voteForm {
@@ -102,7 +101,7 @@
         }
         
         .votingButton {
-            background-color: #4CAF50;
+            background-color: #131fc7;
             padding: 10px 20px;
             margin: 10px;
             cursor: pointer;
@@ -111,7 +110,8 @@
         }
         
         .votingButton:hover {
-            background-color: #3e8e41;
+            background-color: #0f1783;
+;
         }
         
         .votingButton p {
@@ -121,6 +121,7 @@
         }
         
         #voteChart {
+            display: none;
             width: 100%;
             max-width: 600px;
             height: 300px;
@@ -134,23 +135,23 @@
 
 <body>
     <div id="topBar">
-        <h>CHEFGANG</h>
-        <div id="navBar"> <Span>Home</Span><Span>Map</Span><Span>Chart</Span><Span>Free Bitcoin</Span></div>
+        <h2>CHEFGANG</h2>
+        <div id="navBar"> <Span><a href="/">Home</a></Span><Span><a href="/map">Map</a></Span><Span><a href="/chart">Chart</a></Span><Span><a href="/btc">BTC</a></Span></div>
     </div>
     <div id="description">
-        <p>We Are Answering the timeless Data Analyticis question?: </br>
-            Which food do Portland, Oregon natives prefer? Mexican, Italian, or Thai?</p>
-        <!-- This is a div that will be the "voting" box at first and upon a submitted vote (i.e. a click) it will turn into a barchart showing the votes thus far, pulled from the sqlite database-->
+        <p> <span style="font-size: smaller;"> We are answering the timeless Data Analytics question:</span> </br>
+            Which food do Portland Oregon natives prefer? </br>
+            <span style="color: red;">Mexican</span> <span style="color: Blue;">Italian</span> or <span style="color: green;">Thai</span> ?</p>
     </div>
     <div id="votingArea">
         <div id="voteForm">
-            <div class="votingButton">
-                <p onclick="handleVote('Mexican')">Mexican</p>
+            <div class="votingButton"style="background-color:red">
+                <p onclick="handleVote('Mexican')" >Mexican</p>
             </div>
-            <div class="votingButton">
+            <div class="votingButton"style="background-color:blue">
                 <p onclick="handleVote('Italian')">Italian</p>
             </div>
-            <div class="votingButton">
+            <div class="votingButton"style="background-color:green">
                 <p onclick="handleVote('Thai')">Thai</p>
             </div>
         </div>
