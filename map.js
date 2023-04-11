@@ -27736,6 +27736,7 @@ for (var i = 0; i < data.length; i++) {
   }
   else {
     color = "yellow";
+    continue;
   }
 
   // Add circles to the map.
