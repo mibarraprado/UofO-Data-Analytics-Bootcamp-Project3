@@ -41,8 +41,10 @@
             display: flex;
         }
 
-        #navBar span {
+        #navBar span a {
             padding: 0 5px;
+            color: white;
+            text-decoration: none;
             font-size: x-small;
             cursor: pointer;
         }
@@ -52,7 +54,7 @@
         }
 
         #description {
-            max-width: 700px;
+            /* max-width: 700px; */
             font-size: 18px;
             text-align: center;
             line-height: 1.6;
@@ -106,8 +108,14 @@
 </head>
 
 <body>
-    <h1>Please give us BTC</h1>
-    <p>3NP1nFDuNtdKz3Nc1DLGoVaVpPaFnewNsc</p>
+    <div id="topBar">
+        <h2>CHEFGANG</h2>
+        <div id="navBar"> <Span><a href="/">Home</a></Span><Span><a href="/map">Map</a></Span><Span><a href="/chart">Chart</a></Span><Span><a href="/btc">BTC</a></Span></div>
+    </div>
+    <div id="description">
+    <h2>Please give us BTC</h2>
+    <p style="overflow-wrap: break-word;font-size: x-small;">3NP1nFDuNtdKz3Nc1DLGoVaVpPaFnewNsc</p>
+</div>
 </body>
 
 </html>
