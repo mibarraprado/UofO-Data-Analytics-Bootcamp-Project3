@@ -1,18 +1,16 @@
 
 
 
-TODO make all pages look nice and not like garbage (bootstrap, basic styling)
-TODO set up the framework for the charting page, (divs, explanation <p>s, borders etc)
-TODO btc page nice
+TODO make all pages look nice and not like garbage (bootstrap, basic styling)btc page nice
 TODO voting div switch completed
 TODO getting data back from server to js file
-TODO getting scripts/js files to load
+TODO set up the framework for the charting page, (divs, explanation <p>s, borders etc)
 TODO learn d3
 TODO learn Leaflet (interactivity)
 TODO make charts
 TODO decide if charts are made "live" or static("png")
-TODO make maps
 TODO finish home page descritpiton and finish
+TODO getting scripts/js files to load
 TODO celebrate over the corpses of our enemies
 
  
@@ -26,3 +24,4 @@ TODONE some html/bootstrap stuff
 TODONE exhaled
 TODONE inhaled
 TODONE slept on it
+TODONE make maps LETS  GO DAVIIIIIIIIID

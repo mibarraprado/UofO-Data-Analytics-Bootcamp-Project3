@@ -1,51 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>Intro to Chef Gang</title>
-    <!-- <script src="scripts/index.js"></script> -->
-    <script>
-        /**
-         *TODO: and it will pick it up but ive yet to do such a thing in python
-         *TODO: lol lets go chef gang brrrr 
-         *TODO:
-         *TODO:
-         *TODO:
-         *TODO:
-         *TODONESKI BOI: Figure out how to communicate with flask server from this js file. https request sbaby
-
-
-        */
-
-        const handleVote = (str) => {
-            voteCast(str)
-            showVotingTotals()
-        }
-
-        const voteCast = (str) => {
-            fetch(`http://127.0.0.1:5000/vote${JSON.stringify(str)}`)
-            //, {
-            //     method: 'POST', // Specify the request method
-            //     headers: {
-            //         'Content-Type': 'application/json' // Set the content type of the request body
-            //     },
-            //     body: JSON.stringify(str) // Attach the JSON data as the request body
-            // })
-        }
-        const showVotingTotals = () => {
-            fetch("http://localhost:5000/voteTot")
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data)
-                    // make a chart with data
-                    //add chart to html 
-                })
-        }
-    </script>
+    <title>CHEFGANG</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -131,7 +89,6 @@
         }
     </style>
 </head>
-
 <body>
     <div id="topBar">
         <h>CHEFGANG</h>
@@ -152,12 +109,5 @@
             </div>
             <div class="votingButton">
                 <p onclick="handleVote('Thai')">Thai</p>
-            </div>
-        </div>
-        <div id="voteChart">
-            <div id="voteHist"></div>
-        </div>
-    </div>
-</body>
-
-</html>
+            </div
+            </body>
