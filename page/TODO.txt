@@ -25,3 +25,8 @@ TODONE make maps LETS  GO DAVIIIIIIIIID
 TODONE make all pages look nice and not like garbage (bootstrap, basic styling)btc page nice
 TODONE voting div switch completed
 TODONE getting data back from server
+
+
+TODO TIMECRUNCH
+TODO TIMECRUNCH
+TODO TIMECRUNCH
