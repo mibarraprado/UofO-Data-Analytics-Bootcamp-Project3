@@ -31,4 +31,5 @@ TODONE getting data back from server
 
 TODO TIMECRUNCH server sglite for voting
 TODO TIMECRUNCH server sqlite for data
-TODO TIMECRUNCH finish home page description and finish
+
+TODO add toggle map 
