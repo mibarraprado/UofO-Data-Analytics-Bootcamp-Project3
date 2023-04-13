@@ -27729,7 +27729,7 @@ for (var i = 0; i < data.length; i++) {
     color = "red";
   }
   else if (data[i].category === "Italian") {
-    color = "blue";
+    color = "turquoise";
   }
   else if (data[i].category === "Thai") {
     color = "green";
