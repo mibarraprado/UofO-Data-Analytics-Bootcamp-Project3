@@ -27,9 +27,10 @@ TODONE make maps LETS  GO DAVIIIIIIIIID
 TODONE make all pages look nice and not like garbage (bootstrap, basic styling)btc page nice
 TODONE voting div switch completed
 TODONE getting data back from server
+TODONE server sglite for voting
 
 
-TODO TIMECRUNCH server sglite for voting
 TODO TIMECRUNCH server sqlite for data
 
 TODO add toggle map 
+TODO learn d3
