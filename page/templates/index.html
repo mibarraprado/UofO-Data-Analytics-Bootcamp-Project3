@@ -117,27 +117,23 @@
 
         */
         let love
-        const handleVote = (str) => {
-            voteCast(str)
-            showVotingTotals()
+        async function handleVote(str) {
+           await voteCast(str)
+           showVotingTotals()
         }
 
         const voteCast = (str) => {
             fetch(`http://127.0.0.1:5000/vote${str}`)
         }
         const showVotingTotals = () => {
-            let voteNumbers
             fetch("http://localhost:5000/voteTot")
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data)
-                    voteNumbers = data
                     // make a chart with data
                     //add chart to html
-                    love = voteNumbers
-                    document.getElementById("mexican").innerHTML = voteNumbers.mexican
-                    document.getElementById("italian").innerHTML = voteNumbers.italian
-                    document.getElementById("thai").innerHTML = voteNumbers.thai
+                    document.getElementById("mexican").innerHTML = data.mexican
+                    document.getElementById("italian").innerHTML = data.italian
+                    document.getElementById("thai").innerHTML = data.thai
                 })
 
         }
