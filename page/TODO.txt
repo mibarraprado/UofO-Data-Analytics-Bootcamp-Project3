@@ -6,7 +6,9 @@ TODO learn d3
 TODO learn Leaflet (interactivity)
 TODO make charts
 TODO decide if charts are made "live" or static("png")
+
 TODO finish home page descritpiton and finish
+
 TODO getting scripts/js files to load
 TODO celebrate over the corpses of our enemies
 
@@ -27,6 +29,6 @@ TODONE voting div switch completed
 TODONE getting data back from server
 
 
-TODO TIMECRUNCH
-TODO TIMECRUNCH
-TODO TIMECRUNCH
+TODO TIMECRUNCH server sglite for voting
+TODO TIMECRUNCH server sqlite for data
+TODO TIMECRUNCH finish home page description and finish
