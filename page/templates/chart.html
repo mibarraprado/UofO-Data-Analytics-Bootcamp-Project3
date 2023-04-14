@@ -103,50 +103,8 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-    <!-- <script>
-        let data
-        async () => {
-            await d3.json(url).then(function(data0) {
-                console.log("hey this is the data:", typeof data0)
-                data = JSON.parse(data0)
-            })
-            const data1 = data
-        }
-    </script> -->
-</head>
-
-<body>
-    <div id="topBar">
-        <h2>CHEFGANG</h2>
-        <div id="navBar"> <Span><a href="/">Home</a></Span><Span><a href="/map">Map</a></Span><Span><a href="/chart">Chart</a></Span><Span><a href="/btc">BTC</a></Span></div>
-    </div>
-    <div id="description"> Portland Metro Area Restaurants Reviews</div>
-
     <script>
-        window.Promise ||
-            document.write(
-                '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
-            )
-        window.Promise ||
-            document.write(
-                '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
-            )
-        window.Promise ||
-            document.write(
-                '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
-            )
-    </script>
-
-    <div id="chart"></div>
-
-    <!-- maria i -->
-    <script>
-        const url = "http://127.0.0.1:5000/data";
-        d3.json(url).then(function(data0) {
-            console.log("hey this is the data:", typeof data0)
-            // Charts code in here
-            const data = JSON.parse(data0)
-
+        const maria_is_awesome = () => {
             MexicanReviews = [0, 0, 0, 0, 0]
             ItalianReviews = [0, 0, 0, 0, 0]
             ThaiReviews = [0, 0, 0, 0, 0]
@@ -263,17 +221,12 @@
             };
             let chart = new ApexCharts(document.querySelector("#chart"), options);
             chart.render();
-        });
+        }
     </script>
-    <div id="plot"></div>
 
-    <!-- david a -->
     <script>
-        const url2 = "http://127.0.0.1:5000/data";
-        d3.json(url2).then(function(data0) {
-            console.log("hey this is the data:", typeof data0)
-            // Charts code in here
-            const data1 = JSON.parse(data0)
+        const davidIsAwesome = (data) => {
+            const data1 = data
             types = data1.map(function(row) {
                 return row.category
             });
@@ -319,7 +272,51 @@
 
             // Render the plot to the div tag with id "plot"
             Plotly.newPlot("plot", traceData, layout);
-        });
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div id="topBar">
+        <h2>CHEFGANG</h2>
+        <div id="navBar"> <Span><a href="/">Home</a></Span><Span><a href="/map">Map</a></Span><Span><a href="/chart">Chart</a></Span><Span><a href="/btc">BTC</a></Span></div>
+    </div>
+    <div id="description"> Portland Metro Area Restaurants Reviews</div>
+
+    <script>
+        window.Promise ||
+            document.write(
+                '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+            )
+        window.Promise ||
+            document.write(
+                '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+            )
+        window.Promise ||
+            document.write(
+                '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+            )
+    </script>
+
+    <div id="chart"></div>
+    <div id="plot"></div>
+
+
+    <script>
+        let data
+        async function yes() {
+            await d3.json("http://127.0.0.1:5000/data").then(function(data0) {
+                console.log("hey this is the data:", typeof data0)
+                data = JSON.parse(data0)
+            })
+            await maria_is_awesome()
+            // const data1 = data
+            davidIsAwesome(data)
+        }
+        yes()
     </script>
 
 </body>
