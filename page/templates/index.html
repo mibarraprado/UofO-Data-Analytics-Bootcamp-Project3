@@ -123,10 +123,10 @@
         }
 
         const voteCast = (str) => {
-            fetch(`http://127.0.0.1:5000/vote${str}`)
+            fetch(`https://turkishfilms.github.io/turkishfilms.pdxfood.io/vote${str}`)
         }
         const showVotingTotals = () => {
-            fetch("http://localhost:5000/voteTot")
+            fetch("https://turkishfilms.github.io/turkishfilms.pdxfood.io/voteTot")
                 .then(res => res.json())
                 .then(data => {
                     // make a chart with data
